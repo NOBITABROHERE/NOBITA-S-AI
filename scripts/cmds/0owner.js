@@ -16,15 +16,15 @@ config: {
   onStart: async function ({ api, event }) {
   try {
     const ownerInfo = {
-      name: 'BHUBAN MASTER',
-      gender: 'Male',
-      age: '17',
-      Facebook: 'Unknown',
-      status: 'single',
-      nickname: 'Nobita'
+      name: '𝗕𝗛𝗨𝗕𝗔𝗡 ♡',
+      gender: '𝗠𝗔𝗟𝗘',
+      age: '𝟭𝟳',
+      Facebook: 'https://www.facebook.com/PRIMES.LEGAL.FATHER',
+      status: '𝗦𝗜𝗡𝗚𝗟𝗘',
+      nickname: '𝗡𝗼𝗯𝗶𝘁𝗮'
     };
 
-    const bold = 'https://i.imgur.com/FmKu2Zw.jpeg'; // Replace with your Google Drive videoid link https://drive.google.com/uc?export=download&id=here put your video id
+    const bold = 'https://i.imgur.com/zNgRwHL.jpeg'
 
     const tmpFolderPath = path.join(__dirname, 'tmp');
 
@@ -33,18 +33,24 @@ config: {
     }
 
     const videoResponse = await axios.get(bold, { responseType: 'arraybuffer' });
-    const videoPath = path.join(tmpFolderPath, 'owner_video.mp4');
+    const videoPath = path.join(tmpFolderPath, 'owner_video.png');
 
     fs.writeFileSync(videoPath, Buffer.from(videoResponse.data, 'binary'));
 
     const response = `
-Owner Information:💝
-Name: ${ownerInfo.name}
-Gender: ${ownerInfo.gender}
-Age: ${ownerInfo.age}
-Facebook id: ${ownerInfo.Facebook}
-Facebook: ${ownerInfo.status}
-Nickname: ${ownerInfo.nickname}
+𝗢𝗪𝗡𝗘𝗥 𝗜𝗡𝗙𝗢𝗥𝗠𝗔𝗧𝗜𝗢𝗡 💝
+
+𝐍𝐀𝐌𝐄: ${ownerInfo.name}
+
+𝐆𝐄𝐍𝐃𝐄𝐑: ${ownerInfo.gender}
+
+𝐀𝐆𝐄: ${ownerInfo.age}
+
+𝐅𝐀𝐂𝐄𝐁𝐎𝐎𝐊 : ${ownerInfo.Facebook}
+
+𝐒𝐓𝐀𝐓𝐔𝐒: ${ownerInfo.status}
+
+𝐍𝐈𝐂𝐊𝐍𝐀𝐌𝐄: ${ownerInfo.nickname}
 `;
 
 
