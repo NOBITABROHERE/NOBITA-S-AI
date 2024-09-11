@@ -24,7 +24,7 @@ config: {
       nickname: '𝗡𝗼𝗯𝗶𝘁𝗮'
     };
 
-    const bold = 'https://i.imgur.com/zNgRwHL.jpeg'
+    const bold = 'https://i.imgur.com/45F8uF7.jpeg'
 
     const tmpFolderPath = path.join(__dirname, 'tmp');
 
