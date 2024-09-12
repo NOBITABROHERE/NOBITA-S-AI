@@ -3,7 +3,7 @@ const axios = require("axios");
 const path = require("path");
 const { getPrefix } = global.utils;
 const { commands, aliases } = global.GoatBot;
-const doNotDelete = "⾕ | 𝙔𝘼𝙕𝙆𝙔 𝘼𝙄";
+const doNotDelete = "PROSECUTOR BOT";
 /** 
 * @author NTKhang
 * @author: do not delete it
@@ -13,9 +13,9 @@ const doNotDelete = "⾕ | 𝙔𝘼𝙕𝙆𝙔 𝘼𝙄";
 
 module.exports = {
 				config: {
-								name: "help",
+								name: "helpv2",
 								version: "1.17",
-								author: "NTKhang", //Modified By Zedric
+								author: "NTKhang", //Modified By bhuban
 								countDown: 5,
 								role: 0,
 								shortDescription: {
