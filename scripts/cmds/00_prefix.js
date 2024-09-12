@@ -1,8 +1,8 @@
 module.exports = {
  config: {
 	 name: "prefix",
-         alias: ["chiyoko","sonu"]
-	 version: "1.4",
+	 alias:["chiyoko","bot"],
+	 version: "1.0",
 	 author: "Tokodori_Frtiz",//remodified by Bhuban
 	 countDown: 5,
 	 role: 0,
